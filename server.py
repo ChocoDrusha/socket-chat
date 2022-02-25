@@ -1,7 +1,7 @@
 import socket
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-sock.bind(('127.0.0.1', 5055))
+sock.bind(('0.0.0.0', 5055))
 clients = []
 while True:
     data, addres = sock.recvfrom(1024)
